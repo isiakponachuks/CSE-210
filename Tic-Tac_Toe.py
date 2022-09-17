@@ -1,4 +1,4 @@
-# Isiakpona Chuks 2021 Fall CSE 210 Programming with Classes
+# Isiakpona Chuks 2022 Fall CSE 210 Programming with Classes
 # Tic-Tac-Toe 
 
 def main():
@@ -17,6 +17,8 @@ def intro():
     print("Rules: Player 1 and player 2, represented by X and O, take turns "
           "marking the spaces in a 3*3 grid. The player who succeeds in placing "
           "three of their marks in a horizontal, vertical, or diagonal row wins.")
+    print("\n")      
+    print ("if all nine squares are full and neither player has three in row or colunm, the game ends in a draw.")
     print("\n")
     input("Press enter to continue.")
     print("\n")
@@ -25,13 +27,11 @@ def intro():
 
 def create_grid():
 # This function creates a blank playboard
-    print("Here is the playboard: ")
+    print("This what the playboard looks like: ")
     board = [[" ", " ", " "],
              [" ", " ", " "],
              [" ", " ", " "]]        
     return board
-
-
 
 def sym():
 # This function decides the players' symbols
@@ -130,8 +130,6 @@ def printPretty(board):
         print("---+---+---")
     return board
 
-
-
 def isWinner(board, symbol_1, symbol_2, count):
 # This function checks if any winner is winning
     winner = True
@@ -188,7 +186,7 @@ def report(count, winner, symbol_1, symbol_2):
     elif (winner == False) and (count % 2 == 0 ):
         print("Winner : Player " + symbol_2 + ".")
     else:
-        print("There is a tie. ")
+        print("There is a draw. ")
 
 # Call Main
 main()
