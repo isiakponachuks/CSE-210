@@ -1,0 +1,11 @@
+
+
+
+Main --------- Director (Class)-------Game (Class)---------Jumper (Class)---------Guess (Class)---------TerminalServices ()
+  |                 |                   |                   |                       |                       |
+Start game        get_inputs          Is playing
+                  do-updates            Y/N
+                  do-outputs            |
+                    (function)       Create parachute
+                    |                Create wordlist
+                                      (objects)
